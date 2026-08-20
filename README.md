@@ -437,26 +437,37 @@ streamlit run app.py
 
 ## 16. Screenshots
 
-Store demonstration screenshots inside the `screenshots` folder.
+The following screenshots demonstrate the main functions of the Generative AI HR Assistant.
 
-Suggested names:
+### Annual Leave Question
 
-```text
-screenshots/dashboard.png
-screenshots/annual_leave.png
-screenshots/work_from_home.png
-screenshots/health_insurance.png
-screenshots/unknown_question.png
-```
+The system correctly retrieves the annual leave policy and generates the answer **14 days**.
 
-The screenshots can demonstrate:
+![Annual Leave Test](screenshots/annual_leave.png)
 
-- The Streamlit interface
-- Correct HR answers
-- Matched HR questions
-- Matched HR policies
-- Similarity scores
-- Fallback handling for unsupported questions
+### Work From Home Question
+
+The system matches the employee's question with the remote-work policy and generates a relevant answer.
+
+![Work From Home Test](screenshots/work_from_home.png)
+
+### Health Insurance Question
+
+The assistant correctly retrieves the health insurance policy and provides the relevant response.
+
+![Health Insurance Test](screenshots/health_insurance.png)
+
+### Unsupported Question
+
+When an unrelated question is entered, the similarity threshold prevents the system from using an incorrect HR policy. Instead, the employee is advised to contact HR.
+
+![Unsupported Question Test](screenshots/unknown_question.png)
+
+### Empty Question Validation
+
+The application also validates empty input and asks the user to enter a question before continuing.
+
+![Empty Question Validation](screenshots/empty_question.png)
 
 ---
 
